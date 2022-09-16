@@ -1,0 +1,13 @@
+let saveEl=document.getElementById("welcome-el")
+let countEl=document.getElementById("imp")
+let count=0
+function increment(){
+    count+=1
+    countEl.innerText=count
+}
+function save(){
+    let countstr=count+"-"
+    saveEl.textContent+=countstr
+    countEl.textContent=0
+    count=0
+}

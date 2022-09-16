@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passenger counter</title>
+    <style>
+.pc{
+
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin:20px;
+    padding: 10px;
+    background-color: black;
+    color: rgb(203, 207, 221);
+    border-radius: 10px;
+    box-shadow: 3px 5px   rgb(36, 31, 31);
+}
+.pc button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(19, 163, 67);
+    color:aliceblue;
+   
+}
+#imp {
+   
+    
+    width: 50px;
+    border-radius: 3px;
+    background-color: antiquewhite;
+    color: black;
+}
+.pov{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="pc">
+    <h1>people entered </h1>
+    <div class="pov"><p id="imp">0</p></div>
+    
+    <button id ="save-btn" onclick="save()">Save</button>
+    <button id="increment" onclick="increment()">Count</button>
+    <p id="welcome-el">Previously Entered: </p>
+    </div>
+    <script src="passcount.js"></script>
+
+</body>
+</html>
